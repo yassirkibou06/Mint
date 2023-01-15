@@ -214,7 +214,7 @@ ul li a:hover {
     position: relative;
 }
 .hero .container .right-side .image {
-    width: 350px;
+    width: 320px;
     height: 400px;
     background-repeat: no-repeat;
     background-position: center;
@@ -243,15 +243,16 @@ ul li a:hover {
     text-align: center;
     font-size: small;
     font-weight: 500;
-    color: var(--title-color);
 }
 .flt-gallery ul a {
     display: inline-block;
     padding: 5px 15px;
     transition: .3s;
+    color: var(--title-color);
 }
 .flt-gallery ul li a:hover {
     background-color: #fff200;
+    color: black;
 }
 .flt-gallery ul .active {
     background-color: #fff200;
@@ -280,6 +281,12 @@ ul li a:hover {
     }
 }
 @media (max-width: 768px) {
+    .flt-gallery h1 {
+        font-size: 27px;
+    }
+    .flt-gallery ul .active {
+        padding: 5px 0px;
+    }
     .flt-gallery .btn-scroll {
         display: none;
     }
@@ -495,8 +502,17 @@ ul li a:hover {
     position: relative;
 }
 @media (max-width: 768px) {
+    .about {
+        width: 97%;
+    }
+    .about .container > h1 {
+        font-size: 30px;
+    }
+    .about .container > p {
+        font-size: 12px;
+    }
     .main {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(2,395px);
     }
     .main .main-overlay {
@@ -553,7 +569,7 @@ ul li a:hover {
 }
 @media (max-width: 768px) {
     .about-box {
-        width: 218%;
+        width: 100%;
     }
 }
 .about-box:hover {
@@ -617,9 +633,16 @@ ul li a:hover {
     margin-top: 45px;
 }
 @media (max-width: 768px) {
+    .blog h1 {
+        font-size: 30px;
+     }
+    .blog p {
+       font-size: 12px;
+    }
     .content-section {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        justify-items: start;
     }
 }
 .card {
@@ -703,10 +726,14 @@ ul li a:hover {
     margin-bottom: 45px;
 }
 @media (max-width: 768px) {
+    .contact h1 {
+        font-size: 30px;
+    }
     .box-contact {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 340px;
         grid-template-rows: repeat(2, 1fr);
+        justify-items: start;
     }  
 }
 .left-side-contact h2 {
@@ -725,6 +752,9 @@ ul li a:hover {
     resize: none;
 }
 @media (max-width: 768px) {
+    .left-side-contact {
+    width: 73%;
+    }
     .left-side-contact .input-text input,
 .left-side-contact .text-area textarea {
     width: 300px;
@@ -852,7 +882,7 @@ ul li a:hover {
 }
 @media (max-width: 768px) {
     .footer-text .back-top::after {
-        right: -5px;
+        right: 25px;
     }
 }
 .footer-text .container p {
