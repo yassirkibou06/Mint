@@ -595,7 +595,7 @@ ul li a:hover {
 }
 @media (max-width: 768px) {
     .blog {
-        height: 200vh;
+        height: 190vh;
     }
 }
 .blog h1 {
@@ -820,6 +820,12 @@ ul li a:hover {
 .footer-text {
     background-image: linear-gradient(to bottom, #fcf9f0, #fff8cf, #fff8ad, #fff98a, #fffa65);    height: 110px;
     margin-top: 40px;
+    width: 100%;
+}
+@media (max-width: 568px) {
+    .footer-text {
+        width: 102%;
+    }
 }
 .footer-text a img {
     height: 50px;  
